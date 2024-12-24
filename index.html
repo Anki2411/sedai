@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsed PDF - Optimize S3 Costs</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 20px; background-color: #f9f9f9; }
+        h1 { font-size: 26px; font-weight: bold; color: #2c3e50; margin: 20px 0; }
+        h2 { font-size: 22px; font-weight: bold; color: #34495e; margin: 15px 0; }
+        h3 { font-size: 18px; font-weight: bold; color: #4a4a4a; margin: 10px 0; }
+        p { font-size: 16px; margin: 10px 0; }
+        .bold { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Optimize S3 Costs</h1>
+    <p>Sedai uses AI to manage Intelligent-Tiering and Archive Access Tier selection for Amazon S3, optimizing costs and improving productivity.</p>
+    <p><span class="bold">Cost Efficiency Gain:</span> 30% - Optimize resource efficiency for S3 workloads.</p>
+    <p><span class="bold">Productivity Gain:</span> 3X - Leverage intelligent systems to cut the toil of S3 management.</p>
+    <h2>Sedai Capabilities</h2>
+    <h3>Intelligent-Tiering Selection</h3>
+    <p>AWS Intelligent-Tiering can provide cost and performance advantages but it's not always clear when the premium needed is cost justified.
+    Sedai autonomously optimizes your S3 buckets by switching objects to the Intelligent-Tiering storage class at the bucket level and for groups of files within the bucket.
+    This class automatically shifts objects between Standard and Archive tiers based on access patterns, ensuring cost-efficiency without compromising availability.</p>
+    <p><span class="bold">Problem solved:</span> Cost, Availability</p>
+    <h3>Archive Access Transition</h3>
+    <p>After migrating your buckets to the Intelligent-Tiering storage class, Sedai generates recommendations for transitioning rarely accessed buckets to Archive Access and Deep Archive Access tiers, realizing cost savings from these lower-cost tiers.</p>
+    <p><span class="bold">Problem solved:</span> Cost, Performance</p>
+    <h3>Automated Remediation</h3>
+    <p>Detects & remediates S3 problems with custom actions.</p>
+    <p><span class="bold">Problem solved:</span> Availability</p>
+    <h3>Cost & Usage Insights</h3>
+    <p>Visibility and actionable insights for your S3 costs.</p>
+    <p><span class="bold">Problem solved:</span> Cost Visibility</p>
+    <h2>How Sedai for S3 Works</h2>
+    <p>Sedai reduces your S3 costs by optimizing Intelligent-Tiering and then recommending transitions to Archive Access. Sedai for S3 is part of an intelligent cloud management platform that continuously optimizes cloud resources to help teams maximize cloud cost efficiency, performance, and availability at scale.</p>
+    <p><span class="bold">Discover → Recommend → Validate → Execute → Track</span></p>
+    <ul>
+        <li><span class="bold">Discover:</span> Identifies your S3 buckets, their traffic patterns, and behavior.</li>
+        <li><span class="bold">Recommend:</span> Suggests optimal settings by understanding service behavior, dependency, and seasonality.</li>
+        <li><span class="bold">Validate:</span> Checks potential changes against pre-selected safe operations with multiple safety checks.</li>
+        <li><span class="bold">Execute:</span> Implements changes via S3 API under copilot (human approval required) or autopilot (autonomous actions).</li>
+        <li><span class="bold">Track:</span> Provides a full audit trail of changes made to the infrastructure.</li>
+    </ul>
+    <h2>Get Started Easily</h2>
+    <p><span class="bold">Flexible deployment:</span> Agentless or agent-based deployment to begin reading S3 metrics. SaaS and on-cloud models available.</p>
+    <p><span class="bold">Out of the box and custom integrations:</span> Sedai integrates with Cloudwatch, Datadog, and other popular AWS APM tools.</p>
+    <p><span class="bold">Automatic discovery:</span> The system quickly discovers your S3 buckets to provide initial insight.</p>
+    <p><span class="bold">Simple pricing:</span> Volume-based pricing.</p>
+    <div class="page-section">
+        <h1>Page 2</h1>
+        <h1>Improve Release Quality with Sedai Release Intelligence</h1>
+        <p>Sedai gives engineering teams insights on how their releases perform in production to help drive cost, performance, and availability improvements.</p>
+        <h2>Overview</h2>
+        <p>Release Intelligence, part of the Sedai autonomous cloud management platform, provides insights on release quality and frequency so that teams using modern applications can stay on top of their frequent release cycles. Teams can see how their releases are impacting cost, performance, and availability and quickly take action when needed.</p>
+        <h2>Key Features</h2>
+        <h3>Release Scorecards</h3>
+        <p>Understand individual release performance with opinionated scores on release quality on a scale from -10 to +10 based on changes in golden signal metrics (cost, performance, errors) relative to previous releases and SLO breaches.</p>
+        <p><span class="bold">Problem addressed:</span> Release Quality</p>
+        <h3>Release Quality Trends</h3>
+        <p>See how releases on a given service perform over time on the golden metrics and SLOs.</p>
+        <p><span class="bold">Problem addressed:</span> Release Quality</p>
+        <h3>Release Frequency Trends</h3>
+        <p>Keep release velocity on track with metrics on the average time between releases and the number of releases per day.</p>
+        <p><span class="bold">Problem addressed:</span> Release Velocity</p>
+        <h3>Company & Team Level Insights</h3>
+        <p>Get insights at a team and company level with monthly trends in overall scores as well as cost, latency, and errors.</p>
+        <p><span class="bold">Problem addressed:</span> Group Performance</p>
+        <h3>Notifications & Alerts</h3>
+        <p>Set notifications on releases below a set score threshold for rapid visibility & quick rollback decisions.</p>
+        <p><span class="bold">Problem addressed:</span> Time to Resolution</p>
+        <h2>Supported Technologies</h2>
+        <p>Sedai Release Intelligence supports a range of cloud compute technologies including Kubernetes, AWS ECS, AWS Lambda, and Amazon EC2.</p>
+        <h2>Get Started with the Sedai Platform</h2>
+        <ul>
+            <li><span class="bold">Initial setup in as little as 15 minutes:</span> Rapid agentless or agent-based deployment to begin reading metrics. Setup with CI/CD & other tools may require additional time.</li>
+            <li><span class="bold">Works seamlessly with existing tools & workflows:</span> Integrates with Prometheus, Datadog, and other popular APM tools, ingress providers, and CI/CD tools.</li>
+            <li><span class="bold">No management burden:</span> Operates autonomously on behalf of the operations team.</li>
+            <li><span class="bold">Simple pricing:</span> Volume-based pricing with free tier.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 3</h1>
+        <h1>AI-powered operations copilot</h1>
+        <p>Sedai autonomously optimizes cloud services for performance, availability & cost using AI/ML at scale.</p>
+        <p><span class="bold">Cost Efficiency Gain:</span> 50% - Optimize resource efficiency for batch and other non-critical workloads.</p>
+        <p><span class="bold">Latency Reduction:</span> 75% - Increase performance for customer-facing real-time services.</p>
+        <p><span class="bold">FCI Reduction:</span> 50% - Cut failed customer interactions (FCIs) due to service availability.</p>
+        <p><span class="bold">Productivity Gain:</span> 6X - Leverage autonomous systems to cut the toil of operations management.</p>
+        <h2>Capabilities</h2>
+        <h3>Autonomous Optimization</h3>
+        <p>Optimizes for cost & performance at the workload infrastructure and purchasing levels based on machine learning to meet your performance and cost goals.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Performance</p>
+        <h3>Autonomous Remediation</h3>
+        <p>Detect & remediate problems including timeouts, memory settings, out of memory, and restarts.</p>
+        <p><span class="bold">Problem solved:</span> Failed Customer Interactions (FCIs)</p>
+        <h3>Release Intelligence</h3>
+        <p>Quantitative scorecards on the production performance (latency, cost, errors) of every release.</p>
+        <p><span class="bold">Problem solved:</span> Release Velocity</p>
+        <h3>Smart SLOs</h3>
+        <p>Add existing SLOs and Sedai will optimize applications to meet them. Sedai can also recommend SLOs & error budgets based on past performance.</p>
+        <p><span class="bold">Problem solved:</span> Performance, Availability</p>
+        <h2>Supported Technologies</h2>
+        <p>Sedai supports a growing range of compute, storage, and data technologies including:</p>
+        <ul>
+            <li><span class="bold">Containers:</span> Kubernetes incl AWS EKS, Azure AKS, Google GKE & AWS ECS</li>
+            <li><span class="bold">Serverless:</span> AWS Lambda</li>
+            <li><span class="bold">Virtual Machines:</span> EC2, Azure</li>
+            <li><span class="bold">Storage:</span> AWS EBS, AWS S3</li>
+            <li><span class="bold">Streaming:</span> GCP Dataflow</li>
+        </ul>
+        <h2>How Sed works</h2>
+        <p>Sedai is an autonomous cloud management platform powered by AI/ML delivering continuous optimization that helps modern application teams to maximize performance, cloud cost efficiency, and availability at scale. Sedai enables teams to shift from static rules and threshold-based automation to modern ML-based autonomous operations. Sedai runs in production at major enterprises & high-growth companies, powered by Sed, our AI operations copilot.</p>
+        <p><span class="bold">Discover → Recommend → Validate → Execute → Learn</span></p>
+        <ul>
+            <li>Sed discovers your infrastructure, application and traffic patterns and behavior.</li>
+            <li>Sed recommends the optimal configuration (e.g., memory, CPU, timeout) by understanding application behavior, dependencies, and seasonality.</li>
+            <li>Sed validates potential changes against pre-selected inherently safe operations with multiple safety checks.</li>
+            <li>Sed then executes these changes in production, on behalf of the operations team, with a full audit trail of changes.</li>
+            <li>Sed uses reinforcement learning to continuously improve performance and cost.</li>
+        </ul>
+        <h2>Get Started Easily</h2>
+        <ul>
+            <li><span class="bold">15 min onboarding:</span> Rapid agentless or agent-based deployment.</li>
+            <li><span class="bold">Works seamlessly with existing tools & workflows:</span> Integrates with popular APM tools including Cloudwatch, Prometheus, Datadog as well as notification, ITSM & runbook tools.</li>
+            <li><span class="bold">No management burden:</span> Operates autonomously on behalf of the operations team.</li>
+            <li><span class="bold">Simple pricing:</span> Volume-based pricing with free tier.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 4</h1>
+        <h1>Autonomously Optimize Kubernetes</h1>
+        <p>Sedai continuously optimizes Kubernetes deployments for cost, performance & availability using AI/ML at scale.</p>
+        <p><span class="bold">Cost Efficiency Gain:</span> 50% - Fix overprovisioning and optimize resource efficiency at workload & node level.</p>
+        <p><span class="bold">Latency Reduction:</span> 30% - Increase performance for customer-facing real-time services.</p>
+        <p><span class="bold">FCI Reduction:</span> 50% - Cut failed customer interactions (FCIs) due to microservice availability.</p>
+        <p><span class="bold">Productivity Gain:</span> 6X - Leverage autonomous systems to cut the toil of Kubernetes management.</p>
+        <h2>Capabilities for Kubernetes</h2>
+        <h3>Workload Optimization</h3>
+        <p>Optimizes horizontal & vertical scaling to meet your cost & performance goals at container & pod level.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Latency</p>
+        <h3>Node Optimization</h3>
+        <p>Selects lowest cost instance types on an application-aware basis, factoring in latency needs.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Latency</p>
+        <h3>Purchasing Optimization</h3>
+        <p>Recommends the lowest cost purchasing solution based on on-demand and savings plan options.</p>
+        <p><span class="bold">Problem solved:</span> Cost</p>
+        <h3>Autonomous Remediation</h3>
+        <p>Detects & remediates problems including out of memory issues and restarts.</p>
+        <p><span class="bold">Problem solved:</span> Failed Customer Interactions (FCIs)</p>
+        <h3>Release Intelligence</h3>
+        <p>Quantitative scorecards on the production performance (latency, cost, errors) of every release.</p>
+        <p><span class="bold">Problem solved:</span> Release Velocity</p>
+        <h3>Smart SLOs</h3>
+        <p>Add existing or have Sedai choose SLOs and Sedai will optimize applications to meet them.</p>
+        <p><span class="bold">Problem solved:</span> Performance, Availability</p>
+        <h2>How Sedai Works</h2>
+        <p>Sedai is an autonomous cloud management platform powered by AI/ML delivering continuous optimization that helps Kubernetes teams maximize cloud cost efficiency, performance, and availability at scale. Sedai enables teams to shift from static rules and threshold-based automation to modern ML-based autonomous operations. Sedai supports major Kubernetes distributions including EKS, GKE, and AKS.</p>
+        <p><span class="bold">Discover → Recommend → Validate → Execute → Learn</span></p>
+        <ul>
+            <li>Sedai discovers your infrastructure, application, and traffic patterns and behavior.</li>
+            <li>Sedai recommends the optimal settings at container, pod, and node level by understanding service behavior, dependency, and seasonality.</li>
+            <li>Sedai validates potential changes against pre-selected inherently safe operations with multiple safety checks.</li>
+            <li>Sedai then executes these changes in production in autonomous mode, on behalf of the operations team, with a full audit trail of changes.</li>
+            <li>Sedai uses reinforcement learning to continuously improve performance and cost.</li>
+        </ul>
+        <h2>Get Started Easily</h2>
+        <ul>
+            <li><span class="bold">Initial setup in as little as 15 minutes:</span> Rapid agentless or agent-based deployment to begin reading metrics. Setup with CI/CD & other tools may require additional time.</li>
+            <li><span class="bold">Works seamlessly with existing tools & workflows:</span> Integrates with Prometheus, Datadog, and other popular APM tools, ingress providers, and CI/CD tools. Supports AWS Fargate.</li>
+            <li><span class="bold">No management burden:</span> Operates autonomously on behalf of the operations team.</li>
+            <li><span class="bold">Simple pricing:</span> Pod-based pricing with free tier.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 5</h1>
+        <h1>Accelerate FinOps Maturity with Autonomous Optimization</h1>
+        <p>Sedai helps FinOps teams find and execute the cloud optimizations they need to meet cost efficiency goals without the burden on engineering resources.</p>
+        <h2>Overview</h2>
+        <p>Sedai is an autonomous cloud management platform designed to help FinOps teams optimize their cloud infrastructure and achieve maximum cost efficiency, performance, and availability. By leveraging advanced AI/ML technology, Sedai enables teams to move beyond traditional, rule-based automation and embrace a modern, autonomous approach to cloud operations.</p>
+        <h2>Build FinOps Capabilities Faster</h2>
+        <h3>Rightsize Workloads & Infrastructure</h3>
+        <p>Optimize horizontal & vertical scale to meet your compute needs with the least amount of compute capacity.</p>
+        <p><span class="bold">FinOps Capability:</span> Resource Utilization & Efficiency</p>
+        <h3>Purchasing Optimization</h3>
+        <p>Recommends the lowest cost purchasing solution based on on-demand and savings plan options so you can optimize cloud rates.</p>
+        <p><span class="bold">FinOps Capability:</span> Commitment Based Discounts</p>
+        <h3>Autoscale Predictively</h3>
+        <p>Sedai’s traffic prediction models reduce overprovisioning allowing teams to take full advantage of the cloud’s variable cost model.</p>
+        <p><span class="bold">FinOps Capability:</span> Workload Mgmt & Automation</p>
+        <h3>Find Inefficient Releases</h3>
+        <p>Uncover code changes that cause resource waste with quantitative scorecards (latency, cost, errors) for every release.</p>
+        <p><span class="bold">FinOps Capability:</span> Managing Anomalies</p>
+        <h3>Make the right tradeoffs</h3>
+        <p>Prioritize between resource efficiency and performance at a granular service level.</p>
+        <p><span class="bold">Capabilities:</span> Resource Utilization & Efficiency</p>
+        <h2>Optimize at Scale</h2>
+        <p>FinOps professionals report their #1 challenge is getting engineers to take action on cost optimization. Sedai empowers engineers to optimize cloud spending in real-time, at scale. Rather than delivering static recommendations, Sedai autonomously executes changes to capture potential savings as they emerge in real-time. Sedai’s autonomous approach can safely execute actions across thousands of services and continuously learns from experience.</p>
+        <p><span class="bold">Discover → Recommend → Validate → Execute → Learn</span></p>
+        <ul>
+            <li>Sedai discovers your infrastructure, application, and traffic patterns and behavior.</li>
+            <li>Sedai recommends the optimal settings at the application and infrastructure level by understanding service behavior, dependency, and seasonality.</li>
+            <li>Sedai validates potential changes against pre-selected inherently safe operations with multiple safety checks.</li>
+            <li>Sedai then executes these changes in production in autonomous mode, on behalf of the operations team, with a full audit trail of changes.</li>
+            <li>Sedai uses reinforcement learning to continuously improve performance and cost.</li>
+        </ul>
+        <p>Sedai can run on Datapilot (Insights), Copilot (approval mode), and Autopilot (fully autonomous) modes.</p>
+        <h2>Supported Technologies</h2>
+        <p>Sedai supports a growing range of container (Kubernetes, AWS ECS), VM (AWS EC2, Azure VMs), serverless (AWS Lambda), and storage & data (Amazon EBS, S3, EFS & GCP Dataflow) technologies.</p>
+        <h2>Get Started Easily</h2>
+        <ul>
+            <li><span class="bold">Initial setup in as little as 15 minutes:</span> Rapid agentless or agent-based deployment to begin reading metrics. Setup with CI/CD & other tools may require additional time.</li>
+            <li><span class="bold">Works seamlessly with existing tools & workflows:</span> Integrates with Cloudwatch, Prometheus, Datadog and other popular APM tools, ingress providers, and CI/CD tools.</li>
+            <li><span class="bold">No management burden:</span> Operates autonomously on behalf of the operations team.</li>
+            <li><span class="bold">Simple pricing:</span> Volume-based pricing with free tier.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 6</h1>
+        <h1>Sedai for Kubernetes: Autonomously Manage Kubernetes Services</h1>
+        <p>Achieve the highest levels of cost efficiency, performance, and availability for Kubernetes applications & infrastructure with the Sedai Autonomous Cloud platform.</p>
+        <h2>Results</h2>
+        <ul>
+            <li><span class="bold">53%:</span> Cost reduction</li>
+            <li><span class="bold">30%:</span> Latency reduction</li>
+            <li><span class="bold">33%:</span> SRE workload reduction</li>
+        </ul>
+        <h2>Key Benefits</h2>
+        <ul>
+            <li>Autonomous systems take action safely in production, 24/7, without human intervention</li>
+            <li>Application-aware optimization of performance, availability, and cost</li>
+            <li>Continuous improvement using reinforcement learning</li>
+            <li>Boost productivity for SREs and Developers</li>
+            <li>Accelerate innovation velocity</li>
+        </ul>
+        <h2>Summary</h2>
+        <p>The complexity of managing Kubernetes applications at scale has surpassed the ability of teams using manual optimization, resulting in sub-optimal results and coping strategies such as over-provisioning of resources. Autonomous systems such as Sedai use machine learning to continually optimize performance, cost, and availability. Sedai autonomously detects, recommends, validates, and executes improvements in production without human intervention, at both an application and infrastructure level, extending native Kubernetes capabilities. Sedai uses rigorous safety checks to safely operate in production.</p>
+        <p>Autonomous operation reduces low-value tasks (toil) by SREs & Operations teams, enabling them to accelerate delivery of higher-level initiatives. Sedai also accelerates innovation velocity by providing immediate feedback on new releases to development teams. Sedai offers an attractive ROI (700% for recent customers) and a rapid payback (<3 months) supported by a rapid rollout period (10 minutes for initial setup, and a ~2-week learning period).</p>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 7</h1>
+        <h1>The Challenge of Kubernetes Optimization</h1>
+        <p>Using Kubernetes with microservice architectures offers major advantages over traditional architectures and has become a strategic imperative. However, Kubernetes is difficult to optimize. Many Kubernetes users experience unexpected cost growth, performance, and reliability problems. A key underlying challenge is the complexity of resource management. Users must specify a wide range of parameters (e.g., CPU, Memory) and other resources across large numbers of interrelated services in a dynamic environment that changes constantly as developers ship new code and user demand changes daily. Setting these parameters manually or using point-in-time optimization approaches fails to achieve optimal results on an ongoing basis and underdeliver on the potential of Kubernetes. Given these difficulties, many development teams opt for a coping strategy involving significant over-provisioning of resources to minimize performance issues.</p>
+        <h1>The Sedai Approach</h1>
+        <p>Sedai manages Kubernetes applications autonomously using state-of-the-art machine learning and predictive engines that detect potential optimization opportunities and issues within your application and take autonomous action to address them in production, optimizing cloud costs, improving performance, and ensuring availability. To enable this model, Sedai automatically discovers your application’s architecture, analyzes traffic patterns as well as performance and cost metrics. Sedai works with Kubernetes running on AWS EKS, Azure AKS, Google GKE, and any Kubernetes distribution via the Kubernetes API.</p>
+        <h2>Autonomous</h2>
+        <p>Sedai’s autonomous approach does not require manual thresholds or human intervention, unless desired by the user. This represents a substantial change to traditional tools (see below) – rather than just detecting and/or recommending changes, Sedai is able to validate changes to determine they are safe to make in production, as well as execute them in a production environment.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Traditional Tool</th>
+                    <th>Sedai Autonomous Platform</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Detect</td>
+                    <td>Partially Automated</td>
+                    <td>Automated</td>
+                </tr>
+                <tr>
+                    <td>Recommend</td>
+                    <td>Partially Automated</td>
+                    <td>Automated</td>
+                </tr>
+                <tr>
+                    <td>Validate</td>
+                    <td>Manual</td>
+                    <td>Automated</td>
+                </tr>
+                <tr>
+                    <td>Execute</td>
+                    <td>Manual</td>
+                    <td>Automated</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>For workloads where the user needs to use manual approval steps, Sedai can be set to manual mode, and integrations allow approval inside other workflow tools.</p>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 8</h1>
+        <h2>Application Aware</h2>
+        <p>Unlike infrastructure-centric tools, Sedai understands the Kubernetes applications running and the dependencies between them through analysis of application behavior and high-level objectives set by the user. This enables Sedai to optimize separately for latency-sensitive applications that drive customer experience & revenue, and those that are cost-sensitive (e.g., batch workloads). After finding improvements that benefit both cost and latency, Sedai can prioritize cost alone, latency, or make a balanced tradeoff.</p>
+        <h2>Continuous Learning</h2>
+        <p>Sedai also evaluates the outcome to improve its ability to find future improvements, creating a continuous learning loop and providing more capabilities than one-time optimization tools. Sedai uses a reinforcement learning approach, providing its ML algorithms with reward signals as improvements are made in performance, cost, and availability, and as accurate predictions of application seasonality and application behavior are made.</p>
+        <h2>Key Use Cases</h2>
+        <h3>Reduce Cloud Costs</h3>
+        <p>Sedai employs three sets of tactics to reduce Kubernetes costs: Application Optimization, Cluster Optimization, and Purchase Optimization; each approach can generate 20–30% cost savings.</p>
+        <h4>1) Application Optimization:</h4>
+        <p>Kubernetes services often run with low resource utilization which drives up cloud costs. The median Kubernetes deployment uses just 20–30% of requested CPU and 30–40% of requested memory. Sedai continuously learns from traffic patterns (e.g., Monday morning peak, night-time traffic lows) and uses this to match demand with resources needed. Where demand varies from predicted seasonality, Sedai will scale up or down. Sedai uses both horizontal and vertical scaling at the same time; most users today are not able to use horizontal and vertical together due to system limitations or without significant testing work. Sedai does this autonomously, allowing 24/7 operation and avoiding human error.</p>
+        <p>An autonomous approach avoids the heavy manual workload of a threshold approach which requires extensive analysis and the correct thresholds often change with each new release. Sedai’s autonomous approach to cost management can resolve a common challenge for Kubernetes teams in which initial configurations may be set by development teams who have application reliability and performance as overriding concerns and are less focused on cost.</p>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 9</h1>
+        <p>Other settings may not be used at all e.g., only 40% of organizations use Kubernetes HPA (horizontal pod autoscaling) and less than 1% use VPA (vertical pod autoscaling). Sedai acts as a controller for HPA and VPA and can choose smartly between both, wherever it's available. Where HPA and VPA are not available, Sedai provides an autoscaling capability.</p>
+        <p>The example at right shows a Sedai application optimization updating CPU and memory settings as well as reducing node count, improving resource usage on behalf of the SRE team.</p>
+        <h3>2) Cluster Optimization:</h3>
+        <p>Sedai optimizes the type and grouping of nodes to run applications. Sedai picks the optimal instances type to run applications (e.g., AWS M5 vs M6a). Sedai’s node group optimization allows applications with similar needs to run on the optimal instance type (e.g., memory-intensive vs compute-intensive). Unlike many other cloud cost tools, Sedai is application-aware and also uses the underlying application latency sensitivity to determine the optimal cluster configuration.</p>
+        <h3>3) Purchase Optimization:</h3>
+        <p>Sedai optimizes the cost of compute resources based on the instance purchasing options provided by public cloud providers including spot and reserved instances.</p>
+        <h2>Improve Performance & Customer Experience through Reduced Latency</h2>
+        <p>For customer-facing applications, latency is a top concern, driving customer experience and revenue. Sedai reduces latency by up to 95% at service level by finding the optimal parameters for memory and CPU, and placing the application in the optimal node group. In the example below, the execution time of a service that adds a new item to an ecommerce shopping cart was reduced by 88%:</p>
+        <div style="text-align: center;">
+            <img src="ecommerce_optimization_graphic.png" alt="Ecommerce Optimization Example">
+            <p><span class="bold">Duration Improved:</span> 88%<br><span class="bold">Total Duration Reduced:</span> 15 hours, 12 minutes</p>
+        </div>
+        <p>Sedai also reports on the number of days of cumulative latency reduction achieved and the cloud spend needed (where applicable) to achieve this.</p>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 10</h1>
+        <h2>Improve Availability</h2>
+        <p>While application uptime has improved across the industry in recent years, outages remain a key risk with potential revenue and reputation impacts as well as absorbing significant team resources during the event. Sedai improves availability through scaling patterns based on seasonality to respond to demand surges. Sedai also watches to see if services are experiencing common problems such as high CPU usage resulting in throttling, or out of memory errors.</p>
+        <p>Sedai uses an escalation-based remediation approach. Depending on the observed application context, Sedai attempts multiple remediations based on the learning from past application behavior. For example, Sedai may first try to restart the service and if that does not address the issue Sedai may recommend changing the CPU or Memory limits (and execute those in autonomous mode after applying safety checks). The example shown at right shows the detection and proposed remediation of a memory issue.</p>
+        <h2>Hit SLOs</h2>
+        <p>Sedai supports organizations with existing SLOs and can also automatically (or manually) set SLOs for organizations not yet using SLOs. Where SLOs are not yet in place, Sedai can auto-recommend SLOs based on analysis of application behavior and user-provided tags (e.g., key checkout services for ecommerce). These SLOs are then autonomously managed by Sedai, which ensures that performance for each service falls within the SLO. For example, if a service slows down (below the latency SLO) during a peak traffic period, Sedai will scale it up to compensate and make sure it stays within the SLO.</p>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 11</h1>
+        <h2>Improve SRE Productivity by Reducing Toil</h2>
+        <p>Sedai enables you to support workload growth without needing to linearly scale up the SRE team. Sedai’s autonomous detection and optimization mean the work of detecting & resolving issues and manually finding optimization can now be managed by SREs with significant lower effort as the autonomous system takes care of many tasks on their behalf. For example, it is tedious for teams to configure HPA/VPA when they have multiple applications and each needs different thresholds. Sedai enables SREs to be less concerned with what is happening in the infrastructure and the chaos of alert fatigue and reactive troubleshooting, and instead focus on new deployments, site enhancements, and other priorities. SREs use Sedai to check new applications and services are on-boarding effectively, that autonomous mode is on, and reviewing optimizations executed by Sedai.</p>
+        <h2>Release with Confidence</h2>
+        <p>Sedai provides early feedback on the performance of every Kubernetes service release with Release intelligence. Sedai will autonomously detect new releases entering production. Sedai analyzes the release compared to the prior release on latency and error count using models that take into account seasonality and traffic patterns under load. Each release is rated on a scale of 1–10 based on the amount of deviation from the prior release (example below).</p>
+        <div style="text-align: center;">
+            <p><span class="bold">Moderate Deviations:</span> 7.5</p>
+            <p>Analyzed from Monday, Dec. 6, 11:58 PM to Wednesday, Dec. 8, 8:10 AM</p>
+            <p>Some changes detected in resource metrics. We recommend reviewing release to avoid potential issues.</p>
+        </div>
+        <p>You can receive recommendations on whether to rollback a release if it doesn’t meet certain criteria or parameters. In addition, scores provide signals to developers on where effort should be placed to optimize the underlying application code. You can either integrate with your CI/CD process to provide the optimal configuration established from prior releases, or when you redeploy Sedai can set your Kubernetes configuration to this optimal level.</p>
+        <h2>Accelerate Innovation Velocity</h2>
+        <p>Sedai users accelerate the speed at which their organizations operate the DevOps cycle. In Development stages, autonomous setting of Kubernetes configurations reduces the burden on Developers and frees them up to focus on core functionality. Release Intelligence supports both the Dev (feedback) and Ops part of the loop (faster releases). Autonomous operations reduce the time taken to perform actions in the Ops part of the cycle.</p>
+        <div style="text-align: center;">
+            <p>DevOps Loop Graphic</p>
+        </div>
+    </div>
+    
+    <div class="page-section">
+        <h1>Page 12</h1>
+        <h2>High ROI and Fast Time to Value</h2>
+        <p>Sedai provides a high ROI due to a combination of:</p>
+        <ul>
+            <li><span class="bold">Top-line benefits:</span> Sedai’s latency and availability improvements and acceleration of the DevOps cycle contribute to customer experience and revenue for supported applications.</li>
+            <li><span class="bold">Cost savings:</span> Cloud cost reductions provide hard cost savings and improve gross margins for online businesses.</li>
+            <li><span class="bold">Productivity benefits:</span> Sedai reduces SRE/Operations workload as tasks are completed autonomously and helps developers focus on code where new releases underperform.</li>
+            <li><span class="bold">Low management effort:</span> Because Sedai is an autonomous system, it does not require constant monitoring by the team. Sedai executes improvements autonomously.</li>
+        </ul>
+        <p>The Sedai team provides ROI assessments tailored for individual customer environments. Sedai also provides a fast time to value due to:</p>
+        <ul>
+            <li><span class="bold">Start for free:</span> Sedai is a freemium service with a 25 pod free allowance.</li>
+            <li><span class="bold">Rapid setup:</span> Sedai takes about 10 minutes for initial setup and has a ~2-week learning period.</li>
+            <li><span class="bold">Ease of integration:</span> Sedai integrates with popular tools including Monitoring and APM platforms (e.g., Datadog, Prometheus), notification providers (e.g., Slack, PagerDuty), ITSMs (e.g., ServiceNow), and runbook automations (e.g., Rundeck).</li>
+        </ul>
+        <h2>About Sedai</h2>
+        <p>Sedai delivers the first autonomous cloud management platform that detects and proactively addresses potential issues in production, improving performance, ensuring availability, and managing cloud costs. Acting as an intelligent autopilot for SREs, Sedai eliminates significant toil for SREs so they can scale and increase innovation cycles. Sedai enhances your Observability and AIOps platforms by proactively preventing issues. Sedai’s investors include Norwest Venture Partners, Sierra Ventures, and Uncorrelated Ventures. Sedai was named a Gartner Cool Vendor in Observability and Monitoring for 2022.</p>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 13</h1>
+        <h1>Sedai for AWS Lambda: Autonomously Optimize Serverless Functions</h1>
+        <p>Achieve the highest levels of performance, availability, and cost efficiency for AWS Lambda functions with the Sedai Autonomous Cloud platform.</p>
+        <h2>Results</h2>
+        <ul>
+            <li><span class="bold">75%:</span> Latency reduction</li>
+            <li><span class="bold">33%:</span> SRE workload reduction</li>
+        </ul>
+        <h2>Key Benefits</h2>
+        <ul>
+            <li>Improve Customer Experience through reduced latency</li>
+            <li>Reduce cost through memory rightsizing and provisioned concurrency management</li>
+            <li>Minimize SLO violations</li>
+            <li>Improve SRE productivity by reducing toil</li>
+            <li>Release with confidence using early insights into code performance in production</li>
+            <li>Easy setup with agentless monitoring, integrations with popular monitoring and other tools</li>
+        </ul>
+        <h2>The Challenge of Serverless Optimization</h2>
+        <p>In dynamic production environments, it has become virtually impossible for companies to continuously optimize serverless functions and overall application performance. The result is either application performance and latency challenges (and potentially lost revenue) or wasted cloud spend.</p>
+        <p>Even if a point-in-time optimization is made, it can become outdated quickly due to constantly changing & unpredictable traffic loads and changes in the serverless function code base with every new release.</p>
+        <p>The task becomes unmanageable especially when teams run 100s or 1000s of serverless functions. SRE teams also must spread their bandwidth across multiple priorities.</p>
+        <p>To optimize serverless functions, teams must continuously:</p>
+        <ul>
+            <li>Rightsize function memory</li>
+            <li>Manage provisioned concurrency</li>
+            <li>Choose how and when to warm up serverless functions and how to keep them warm</li>
+            <li>Trace errors in this heavily distributed environment</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 14</h1>
+        <h2>The Autonomous Approach</h2>
+        <p>Sedai manages serverless functions autonomously using state-of-the-art machine learning and predictive engines that detect potential optimization opportunities and issues within your serverless functions and take autonomous action to address them in production, improving performance, ensuring availability, and optimizing cloud costs. Acting as an intelligent autopilot for SREs, Sedai eliminates significant toil for SREs so they can increase time spent on innovation. Sedai intelligently discovers AWS Lambda functions, analyzes traffic patterns and metric performance and then continuously manages your production environments — without manual thresholds or human intervention.</p>
+        <h2>Autonomous Optimization</h2>
+        <h3>Improve Customer Experience through Reduced Latency</h3>
+        <p>For most SRE teams, the number one serverless concern is latency. Latency drives customer experience and revenue. Sedai reduces latency by up to 95% at a function level by finding the optimal parameters or the function by optimizing memory settings (and indirectly CPU), concurrency (provisioned and reserved), and timeouts for Lambda functions. In the example below, the execution time of a function that adds an item to an ecommerce shopping cart has been reduced by 88%:</p>
+        <div style="text-align: center;">
+            <p><span class="bold">Duration Improved:</span> 88%<br><span class="bold">Total Duration Reduced:</span> 15 hours, 12 minutes</p>
+            <p>Prod01-commerceApi-cart-cart-item-add</p>
+        </div>
+        <p>Sedai also reports on the number of days of cumulative latency reduction achieved and the cloud spend needed (where applicable) to achieve this.</p>
+        <h3>Reduce Cloud Costs</h3>
+        <p>Sedai improves your serverless costs through autonomous optimizations. When lambda functions are not extensively used (e.g., during night time traffic lows), Sedai scales down memory based on the traffic pattern. In addition to memory, Sedai also cost-optimizes provisioned concurrency to avoid over-provisioning and optimize function warm up. After finding improvements that benefit both cost and latency, Sedai gives you the option to then prioritize cost alone, latency, or make a balanced tradeoff.</p>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 15</h1>
+        <h2>Hit SLOs</h2>
+        <p>Sedai enables users to configure service level objectives (SLO). These SLOs are then autonomously managed by Sedai, which ensures that performance for each service falls within the SLO. For example, if a service slows down (below the latency SLO) during peak traffic, Sedai will scale it up to compensate and make sure it stays within the SLO.</p>
+        <h2>Improve SRE Productivity by Reducing Toil</h2>
+        <p>Sedai enables you to support workload growth without needing to linearly scale up the SRE team. Sedai’s autonomous detection and optimization mean the work of detecting & resolving issues and manually finding optimization is shifted from SREs to Sedai which can take care of many tasks without their input. Sedai enables SREs to be less concerned with what is happening in the infrastructure and the chaos of alert fatigue and reactive troubleshooting, and instead focus on new deployments, site enhancements, and other priorities. SREs now use Sedai to check new applications and services are onboarding effectively, that autonomous mode is on, and reviewing optimizations executed by Sedai.</p>
+        <h2>Release with Confidence</h2>
+        <p>Sedai provides early feedback on the performance of every serverless release with Release intelligence. Sedai will autonomously detect new Lambda releases entering production. Sedai analyzes the release compared to the prior release on latency and error count using models that take into account seasonality and traffic patterns under load. Each release is rated on a scale of 1–10 based on the amount of deviation from the prior release. You can receive recommendations on whether to rollback a release if it doesn’t meet certain criteria or parameters. In addition, scores provide signals to developers on where effort should be placed to optimize the underlying application code. You can either integrate with your CI/CD process to provide the optimal configuration established from prior releases, or when you redeploy we can set your Lambda configuration to this optimal level.</p>
+        <div style="text-align: center;">
+            <p><span class="bold">Moderate Deviations:</span> 7.5</p>
+            <p>Analyzed from Monday, Dec. 6, 11:58 PM to Wednesday, Dec. 8, 8:10 AM</p>
+            <p>Some changes detected in resource metrics. We recommend reviewing release to avoid potential issues.</p>
+        </div>
+        <h2>Integrates with Your Existing Tools & Workflow</h2>
+        <p>Sedai integrates with popular tools including Monitoring and APM platforms (e.g., Datadog, Prometheus), notification providers (e.g., Slack, PagerDuty), ITSMs (e.g., ServiceNow), and runbook automations (e.g., Rundeck). Sedai also allows you to add additional custom metrics and establish your own SLOs.</p>
+        <h2>About Sedai</h2>
+        <p>Sedai delivers the first autonomous cloud management platform that detects and proactively addresses potential issues in production, improving performance, ensuring availability, and managing cloud costs. Acting as an intelligent autopilot for SREs, Sedai eliminates significant toil for SREs so they can scale and increase innovation cycles. Sedai enhances your Observability and AIOps platforms by proactively preventing issues. Sedai’s investors include Norwest Venture Partners and Sierra Ventures.</p>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 16</h1>
+        <h1>Autonomously Optimize AWS ECS</h1>
+        <p>Sedai continuously optimizes AWS ECS deployments for cost, performance & availability using AI/ML at scale.</p>
+        <p><span class="bold">Cost Efficiency Gain:</span> 40% - Fix overprovisioning and optimize resource efficiency for non-critical workloads.</p>
+        <p><span class="bold">Latency Reduction:</span> 35% - Increase performance for customer-facing real-time services.</p>
+        <p><span class="bold">FCI Reduction:</span> 50% - Cut failed customer interactions (FCIs) due to service availability.</p>
+        <p><span class="bold">Productivity Gain:</span> 6X - Leverage autonomous systems to cut the toil of ECS management.</p>
+        <h2>Capabilities for AWS ECS</h2>
+        <h3>Service Optimization</h3>
+        <p>Configures horizontal & vertical scaling for the best cost & performance, optimizing memory & CPU.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Latency</p>
+        <h3>Container Instance Optimization</h3>
+        <p>Selects instance types on an application-aware basis, factoring in application-level latency needs.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Latency</p>
+        <h3>Purchasing Optimization</h3>
+        <p>Recommends the lowest cost purchasing solution based on on-demand and savings plan options.</p>
+        <p><span class="bold">Problem solved:</span> Cost</p>
+        <h3>Autonomous Remediation</h3>
+        <p>Detect & remediate problems including out-of-memory issues and restarts.</p>
+        <p><span class="bold">Problem solved:</span> Failed Customer Interactions (FCIs)</p>
+        <h3>Release Intelligence</h3>
+        <p>Quantitative scorecards on the production performance (latency, cost, errors) of every release.</p>
+        <p><span class="bold">Problem solved:</span> Release Velocity</p>
+        <h3>Smart SLOs</h3>
+        <p>Add existing or have Sedai choose SLOs and Sedai will optimize applications to meet them.</p>
+        <p><span class="bold">Problem solved:</span> Performance, Availability</p>
+        <h2>How Sedai Works</h2>
+        <p>Sedai is an autonomous cloud management platform powered by AI/ML delivering continuous optimization that helps ECS teams to maximize cloud cost efficiency, performance, and availability at scale. Sedai enables teams to shift from static rules and threshold-based automation to modern ML-based autonomous operations. Sedai runs in production across all AWS commercial regions.</p>
+        <p><span class="bold">Discover → Recommend → Validate → Execute → Learn</span></p>
+        <ul>
+            <li>Sedai discovers your infrastructure, application, and traffic patterns and behavior.</li>
+            <li>Sedai recommends the optimal memory and CPU settings for containers and tasks by understanding service behavior, dependency, and seasonality.</li>
+            <li>Sedai validates potential changes against pre-selected inherently safe operations with multiple safety checks.</li>
+            <li>Sedai then executes these changes in production, on behalf of the operations team, with a full audit trail of changes.</li>
+            <li>Sedai uses reinforcement learning to continuously improve performance and cost.</li>
+        </ul>
+        <h2>Get Started Easily</h2>
+        <ul>
+            <li><span class="bold">15 min onboarding:</span> Rapid, agentless deployment.</li>
+            <li><span class="bold">Works seamlessly with existing tools & workflows:</span> Integrates with Cloudwatch and other popular APM tools. Supports AWS Fargate.</li>
+            <li><span class="bold">No management burden:</span> Operates autonomously on behalf of the operations team.</li>
+            <li><span class="bold">Simple pricing:</span> ECS task-based pricing with free tier.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 17</h1>
+        <h1>Optimize EC2 Cost & Performance</h1>
+        <p>Sedai continuously evaluates EC2 deployments for cost, performance & availability and delivers infrastructure insights.</p>
+        <p><span class="bold">Cost Efficiency Gain:</span> 30% - Fix overprovisioning and optimize resource efficiency for EC2 workloads.</p>
+        <p><span class="bold">Latency Reduction:</span> 25% - Increase performance for customer-facing real-time services.</p>
+        <p><span class="bold">FCI Reduction:</span> 50% - Cut failed customer interactions (FCIs) due to EC2 availability.</p>
+        <p><span class="bold">Productivity Gain:</span> 3X - Leverage intelligent systems to cut the toil of EC2 management.</p>
+        <h2>Capabilities for EC2</h2>
+        <h3>Application & Instance Optimization</h3>
+        <p>Optimizes horizontal & vertical scaling to meet your cost & performance goals by recommending the optimal number and type of EC2 instances.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Latency</p>
+        <h3>Purchasing Optimization</h3>
+        <p>Recommends the lowest cost purchasing solution based on on-demand and savings plan options.</p>
+        <p><span class="bold">Problem solved:</span> Cost</p>
+        <h3>Automated Remediation</h3>
+        <p>Detects & remediates problems with custom actions.</p>
+        <p><span class="bold">Problem solved:</span> Failed Customer Interactions (FCIs)</p>
+        <h3>Smart SLOs</h3>
+        <p>Add existing or have Sedai choose SLOs. Sedai will track performance against them.</p>
+        <p><span class="bold">Problem solved:</span> Performance, Availability</p>
+        <h3>Release Intelligence</h3>
+        <p>Quantitative scorecards on the production performance (latency, cost, errors) of every release.</p>
+        <p><span class="bold">Problem solved:</span> Release Quality</p>
+        <h3>Usage Insights</h3>
+        <p>Visibility and actionable insights on what EC2 instances are being used and where.</p>
+        <p><span class="bold">Problem solved:</span> Optimization, Replatforming</p>
+        <h2>How Sedai for EC2 Works</h2>
+        <p>Sedai for EC2 is an intelligent cloud management platform supporting continuous optimization and insights to usage that helps teams maximize cloud cost efficiency, performance, and availability at scale.</p>
+        <p><span class="bold">Discover → Recommend → Validate → Execute → Track</span></p>
+        <ul>
+            <li>Sedai discovers your EC2 infrastructure, application, and traffic patterns and behavior including identifying stateless or stateful applications.</li>
+            <li>Sedai recommends the optimal settings understanding service behavior, dependency, and seasonality.</li>
+            <li>Sedai validates potential changes against pre-selected inherently safe operations with multiple safety checks.</li>
+            <li>Changes are executed with a mixture of automated and manual actions.</li>
+            <li>Updates are tracked with a full audit trail of changes made to the infrastructure.</li>
+        </ul>
+        <h2>Flexible Deployment</h2>
+        <ul>
+            <li><span class="bold">Flexible deployment:</span> Agentless or agent-based deployment to begin reading metrics. SaaS and on-cloud models available.</li>
+            <li><span class="bold">Out of the box and custom integrations:</span> Integrates with Cloudwatch, Datadog, and other popular EC2 APM tools, load balancers, and CI/CD tools.</li>
+            <li><span class="bold">Automatic discovery:</span> The system quickly discovers your EC2 infrastructure.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 18</h1>
+        <h1>Optimize EBS Cost & Performance</h1>
+        <p>Sedai autonomously manages storage class selection and unused volumes for Amazon EBS.</p>
+        <p><span class="bold">Cost Efficiency Gain:</span> 30% - Choose optimal storage class & find unused EBS volumes.</p>
+        <p><span class="bold">Performance Gain:</span> 10% - Improve throughput and IOPS for customer-facing real-time services.</p>
+        <p><span class="bold">Productivity Gain:</span> 3X - Leverage intelligent systems to cut the toil of EBS management.</p>
+        <h2>Capabilities for EBS</h2>
+        <h3>Storage Class Selection</h3>
+        <p>Chooses the optimal EBS storage classes to meet your cost & performance goals across SSDs (General Purpose & Provisioned IOPS SSD volumes) and HDD (Throughput Optimized & Cold HDD volumes).</p>
+        <p><span class="bold">Problem solved:</span> Cost, Performance</p>
+        <h3>Unused Volume Finder</h3>
+        <p>Sedai continuously monitors your EBS volumes and usage patterns to identify volumes that are no longer in use. This helps in reducing costs by recommending volumes that can be safely decommissioned.</p>
+        <p><span class="bold">Problem solved:</span> Cost</p>
+        <h3>Automated Remediation</h3>
+        <p>Issues detected in your EBS environment are resolved automatically based on pre-defined custom actions. This minimizes downtime and enhances the reliability of your systems.</p>
+        <p><span class="bold">Problem solved:</span> Availability</p>
+        <h3>Cost & Usage Insights</h3>
+        <p>Visibility and actionable insights on EBS volumes in use and their costs, along with summaries of optimization opportunities not yet implemented.</p>
+        <p><span class="bold">Problem solved:</span> Cost visibility</p>
+        <h2>How Sedai for EBS Works</h2>
+        <p>Sedai reduces your EBS costs by optimizing storage classes and removing unused volumes by continuously analyzing IOPS, throughput, volume size, and other metrics. Sedai for EBS is part of an intelligent cloud management platform that continuously optimizes cloud resources to help teams maximize cloud cost efficiency, performance, and availability at scale.</p>
+        <p><span class="bold">Discover → Recommend → Validate → Execute → Track</span></p>
+        <ul>
+            <li><span class="bold">Discover:</span> Identifies your EBS volumes, their traffic patterns, and behavior.</li>
+            <li><span class="bold">Recommend:</span> Suggests optimal settings by understanding service behavior, dependency, and seasonality.</li>
+            <li><span class="bold">Validate:</span> Checks potential changes against pre-selected safe operations with multiple safety checks.</li>
+            <li><span class="bold">Execute:</span> Implements changes via AWS API under copilot (human approval required) or autopilot (autonomous actions).</li>
+            <li><span class="bold">Track:</span> Provides a full audit trail of changes made to the infrastructure.</li>
+        </ul>
+        <h2>Get Started Easily</h2>
+        <ul>
+            <li><span class="bold">Flexible deployment:</span> Agentless or agent-based deployment to begin reading metrics. SaaS and on-cloud models available.</li>
+            <li><span class="bold">Out of the box and custom integrations:</span> Integrates with Cloudwatch, Datadog, and other popular AWS APMs as well as CI/CD tools.</li>
+            <li><span class="bold">Automatic discovery:</span> The system quickly discovers your EBS volumes.</li>
+            <li><span class="bold">Simple pricing:</span> Volume-based pricing with free tier.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 19</h1>
+        <h1>Autonomously Optimize Azure VMs</h1>
+        <p>Sedai uses AI to continuously optimize Azure VM deployments for cost, performance & availability.</p>
+        <p><span class="bold">Cost Efficiency Gain:</span> 30% - Fix overprovisioning and optimize resource efficiency for Azure VM workloads.</p>
+        <p><span class="bold">Latency Reduction:</span> 25% - Increase performance for customer-facing real-time services.</p>
+        <p><span class="bold">FCI Reduction:</span> 50% - Cut failed customer interactions (FCIs) due to availability.</p>
+        <p><span class="bold">Productivity Gain:</span> 3X - Leverage intelligent systems to cut the toil of Azure VM management.</p>
+        <h2>Capabilities for Azure VMs</h2>
+        <h3>Application & Instance Optimization</h3>
+        <p>AI-powered autonomous optimization of horizontal & vertical scaling, managing the number and type of Azure instances and Azure VM Scale Sets controllers.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Performance</p>
+        <h3>Purchasing Optimization</h3>
+        <p>Recommends the lowest cost purchasing solution based on on-demand, reserved instances, and savings plan options.</p>
+        <p><span class="bold">Problem solved:</span> Cost</p>
+        <h3>Automated Remediation</h3>
+        <p>Detects & remediates problems with custom actions.</p>
+        <p><span class="bold">Problem solved:</span> Failed Customer Interactions (FCIs)</p>
+        <h3>Smart SLOs</h3>
+        <p>Add existing or have Sedai choose SLOs. Sedai will track performance against them.</p>
+        <p><span class="bold">Problem solved:</span> Performance, Availability</p>
+        <h3>Release Intelligence</h3>
+        <p>Quantitative scorecards, powered by AI and advanced ML models providing latency, cost & errors for every new release.</p>
+        <p><span class="bold">Problem solved:</span> Release Quality</p>
+        <h3>Usage Insights</h3>
+        <p>Visibility and actionable insights on what Azure instances are being used and where.</p>
+        <p><span class="bold">Problem solved:</span> Optimization, Replatforming</p>
+        <h2>How Sedai for Azure VMs Works</h2>
+        <p>Sedai for Azure VMs is an intelligent cloud management platform using AI (including patented reinforcement learning) to support continuous optimization and insights to usage that helps teams maximize cloud cost efficiency, performance, and availability at scale.</p>
+        <p><span class="bold">Discover → Recommend → Validate → Execute → Track</span></p>
+        <ul>
+            <li>Sedai discovers your Azure VM infrastructure, application, and traffic patterns and behavior including identifying stateless or stateful applications.</li>
+            <li>Sedai recommends the optimal settings understanding service behavior, dependency, and seasonality.</li>
+            <li>Sedai validates potential changes against pre-selected inherently safe operations with multiple safety checks.</li>
+            <li>Changes are executed with a mixture of automated and manual actions.</li>
+            <li>Updates are tracked with a full audit trail of changes made to the infrastructure.</li>
+        </ul>
+        <p>Sedai can run in three modes: Datapilot (insights only), Copilot (recommendations), or Autopilot (autonomous actions).</p>
+        <h2>Flexible Deployment</h2>
+        <ul>
+            <li><span class="bold">Flexible deployment:</span> Agentless or agent-based deployment to begin reading metrics. SaaS and on-cloud models available.</li>
+            <li><span class="bold">Out of the box and custom integrations:</span> Integrates with Cloudwatch, Datadog, and other Azure tools.</li>
+            <li><span class="bold">Automatic discovery:</span> The system quickly discovers your Azure instances.</li>
+            <li><span class="bold">Infrastructure insights:</span> Actionable insights to provide total visibility.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 20</h1>
+        <h1>Autonomously Optimize Azure AKS</h1>
+        <p>Sedai continuously optimizes Azure AKS deployments for cost, performance & availability using AI/ML at scale in copilot or autopilot mode.</p>
+        <p><span class="bold">Cost Efficiency Gain:</span> 50% - Fix overprovisioning and optimize resource efficiency for non-critical workloads.</p>
+        <p><span class="bold">Latency Reduction:</span> 30% - Increase performance for customer-facing real-time services.</p>
+        <p><span class="bold">FCI Reduction:</span> 50% - Cut failed customer interactions (FCIs) due to service availability.</p>
+        <p><span class="bold">Productivity Gain:</span> 6X - Leverage autonomous systems to cut the toil of AKS management.</p>
+        <h2>Capabilities for Azure AKS</h2>
+        <h3>Workload Optimization</h3>
+        <p>Optimizes horizontal & vertical scaling to meet your performance and cost goals at container & pod level.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Latency</p>
+        <h3>Node Optimization</h3>
+        <p>Selects instance types on an application-aware basis, factoring in application-level latency needs.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Latency</p>
+        <h3>Purchasing Optimization</h3>
+        <p>Recommends the lowest cost purchasing solution based on on-demand and savings plan options.</p>
+        <p><span class="bold">Problem solved:</span> Cost</p>
+        <h3>Autonomous Remediation</h3>
+        <p>Detects & remediates problems including out-of-memory issues and restarts.</p>
+        <p><span class="bold">Problem solved:</span> Failed Customer Interactions (FCIs)</p>
+        <h3>Release Intelligence</h3>
+        <p>Quantitative scorecards on the production performance (latency, cost, errors) of every release.</p>
+        <p><span class="bold">Problem solved:</span> Release Velocity</p>
+        <h3>Smart SLOs</h3>
+        <p>Add existing or have Sedai choose SLOs and Sedai will optimize applications to meet them.</p>
+        <p><span class="bold">Problem solved:</span> Performance, Availability</p>
+        <h2>How Sedai Works</h2>
+        <p>Sedai is an autonomous cloud management platform powered by AI/ML delivering continuous optimization that helps AKS teams maximize cloud cost efficiency, performance, and availability at scale. Sedai enables teams to shift from static rules and threshold-based automation to modern ML-based autonomous operations. Sedai provides Datapilot, Copilot, and Autopilot modes so teams can adopt autonomy at their own speed.</p>
+        <p><span class="bold">Discover → Recommend → Validate → Execute → Learn</span></p>
+        <ul>
+            <li>Sedai discovers your infrastructure, application, and traffic patterns and behavior.</li>
+            <li>Sedai recommends the optimal settings at container, pod, and node level by understanding service behavior, dependency, and seasonality.</li>
+            <li>Sedai validates potential changes against pre-selected inherently safe operations with multiple safety checks.</li>
+            <li>Sedai then executes these changes in production, on behalf of the operations team, with a full audit trail of changes.</li>
+            <li>Sedai uses reinforcement learning to continuously improve performance and cost.</li>
+        </ul>
+        <h2>Get Started Easily</h2>
+        <ul>
+            <li><span class="bold">15 min setup:</span> Rapid agentless or agent-based deployment. Agentless AKS deployment uses Azure Active Directory (AD) for authentication and K8s RBAC/Azure RBAC for authorization.</li>
+            <li><span class="bold">Works seamlessly with existing tools & workflows:</span> Integrates with Prometheus, Azure Monitor, and other popular APM tools, ingress providers, and CI/CD tools.</li>
+            <li><span class="bold">No management burden:</span> Operates autonomously on behalf of the operations team.</li>
+            <li><span class="bold">Simple pricing:</span> Volume-based pricing with free tier.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 21</h1>
+        <h1>Autonomously Optimize AWS Lambda</h1>
+        <p>Sedai continuously optimizes AWS Lambda deployments for performance, availability & cost using AI/ML at scale.</p>
+        <p><span class="bold">Cold Start Reduction:</span> 95% - Virtually eliminate cold starts with autonomous concurrency management.</p>
+        <p><span class="bold">Latency Reduction:</span> 75% - Increase performance for customer-facing real-time Lambdas.</p>
+        <p><span class="bold">Cost Efficiency Gain:</span> 30% - Optimize resource efficiency for batch and other non-critical workloads.</p>
+        <p><span class="bold">Productivity Gain:</span> 6X - Leverage autonomous systems to cut the toil of Lambda management.</p>
+        <h2>Capabilities for AWS Lambda</h2>
+        <h3>Autonomous Optimization</h3>
+        <p>Optimizes for cost & performance based on machine learning to meet your performance and cost goals.</p>
+        <p><span class="bold">Problem solved:</span> Latency, Cost</p>
+        <h3>Autonomous Concurrency</h3>
+        <p>Virtually eliminate cold starts with ML-based selection of the volume and mix of provisioned concurrency & warmups informed by seasonality, without cost increases. Multi-language support.</p>
+        <p><span class="bold">Problem solved:</span> Cold Starts, Concurrency Costs</p>
+        <h3>Automated Remediation</h3>
+        <p>Detect & remediate problems including timeouts, memory settings, and restarts. Leverages the AWS Telemetry API.</p>
+        <p><span class="bold">Problem solved:</span> Failed Customer Interactions (FCIs)</p>
+        <h3>Release Intelligence</h3>
+        <p>Quantitative scorecards on the production performance (latency, cost, errors) of every release.</p>
+        <p><span class="bold">Problem solved:</span> Release Velocity</p>
+        <h3>Smart SLOs</h3>
+        <p>Add existing SLOs and Sedai will optimize applications to meet them. Sedai can also recommend SLOs & error budgets based on past performance.</p>
+        <p><span class="bold">Problem solved:</span> Performance, Availability</p>
+        <h2>How Sedai Works</h2>
+        <p>Sedai is an autonomous cloud management platform powered by AI/ML delivering continuous optimization that helps serverless teams to maximize performance, cloud cost efficiency, and availability at scale. Sedai enables teams to shift from static rules and threshold-based automation to modern ML-based autonomous operations. Sedai runs in production at major Lambda users across all AWS commercial regions.</p>
+        <p><span class="bold">Discover → Recommend → Validate → Execute → Learn</span></p>
+        <ul>
+            <li>Sedai discovers your infrastructure, application, and traffic patterns and behavior.</li>
+            <li>Sedai recommends the optimal explicit memory (and implicit CPU) and concurrency level by understanding function behavior, dependency, and seasonality.</li>
+            <li>Sedai validates potential changes against pre-selected inherently safe operations with multiple safety checks.</li>
+            <li>Sedai then executes these changes in production, on behalf of the operations team, with a full audit trail of changes.</li>
+            <li>Sedai uses reinforcement learning to continuously improve performance and cost.</li>
+        </ul>
+        <h2>Get Started Easily</h2>
+        <ul>
+            <li><span class="bold">15 min onboarding:</span> Rapid, agentless deployment.</li>
+            <li><span class="bold">Works seamlessly with existing tools & workflows:</span> Integrates with Cloudwatch and other popular APM tools.</li>
+            <li><span class="bold">No management burden:</span> Operates autonomously on behalf of the operations team.</li>
+            <li><span class="bold">Simple pricing:</span> Invocation-based pricing with free tier.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 22</h1>
+        <h1>Autonomously Optimize AWS EKS</h1>
+        <p>Sedai continuously optimizes AWS EKS deployments for cost, performance & availability using AI/ML at scale.</p>
+        <p><span class="bold">Cost Efficiency Gain:</span> 50% - Fix overprovisioning and optimize resource efficiency for non-critical workloads.</p>
+        <p><span class="bold">Latency Reduction:</span> 30% - Increase performance for customer-facing real-time services.</p>
+        <p><span class="bold">FCI Reduction:</span> 50% - Cut failed customer interactions (FCIs) due to service availability.</p>
+        <p><span class="bold">Productivity Gain:</span> 6X - Leverage autonomous systems to cut the toil of EKS management.</p>
+        <h2>Capabilities for AWS EKS</h2>
+        <h3>Workload Optimization</h3>
+        <p>Optimizes horizontal & vertical scaling to meet your performance and cost goals at container & pod level.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Latency</p>
+        <h3>Node Optimization</h3>
+        <p>Selects instance types on an application-aware basis, factoring in application-level latency needs.</p>
+        <p><span class="bold">Problem solved:</span> Cost, Latency</p>
+        <h3>Purchasing Optimization</h3>
+        <p>Recommends the lowest cost purchasing solution based on on-demand and savings plan options.</p>
+        <p><span class="bold">Problem solved:</span> Cost</p>
+        <h3>Autonomous Remediation</h3>
+        <p>Detects & remediates problems including out-of-memory issues and restarts.</p>
+        <p><span class="bold">Problem solved:</span> Failed Customer Interactions (FCIs)</p>
+        <h3>Release Intelligence</h3>
+        <p>Quantitative scorecards on the production performance (latency, cost, errors) of every release.</p>
+        <p><span class="bold">Problem solved:</span> Release Velocity</p>
+        <h3>Smart SLOs</h3>
+        <p>Add existing or have Sedai choose SLOs and Sedai will optimize applications to meet them.</p>
+        <p><span class="bold">Problem solved:</span> Performance, Availability</p>
+        <h2>How Sedai Works</h2>
+        <p>Sedai is an autonomous cloud management platform powered by AI/ML delivering continuous optimization that helps EKS teams maximize cloud cost efficiency, performance, and availability at scale. Sedai enables teams to shift from static rules and threshold-based automation to modern ML-based autonomous operations. Sedai runs in production across all AWS commercial regions.</p>
+        <p><span class="bold">Discover → Recommend → Validate → Execute → Learn</span></p>
+        <ul>
+            <li>Sedai discovers your infrastructure, application, and traffic patterns and behavior.</li>
+            <li>Sedai recommends the optimal settings at container, pod, and node level by understanding service behavior, dependency, and seasonality.</li>
+            <li>Sedai validates potential changes against pre-selected inherently safe operations with multiple safety checks.</li>
+            <li>Sedai then executes these changes in production, on behalf of the operations team, with a full audit trail of changes.</li>
+            <li>Sedai uses reinforcement learning to continuously improve performance and cost.</li>
+        </ul>
+        <h2>Get Started Easily</h2>
+        <ul>
+            <li><span class="bold">15 min setup:</span> Rapid agentless or agent-based deployment.</li>
+            <li><span class="bold">Works seamlessly with existing tools & workflows:</span> Integrates with Prometheus and other popular APM tools, ingress providers, and CI/CD tools. Supports AWS Fargate.</li>
+            <li><span class="bold">No management burden:</span> Operates autonomously on behalf of the operations team.</li>
+            <li><span class="bold">Simple pricing:</span> EKS pod-based pricing with free tier.</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 23</h1>
+        <h1>Integrating Karpenter</h1>
+        <p>Achieve autonomous Kubernetes management that leverages Karpenter's unique real-time node selection.</p>
+        <h2>Karpenter Overview</h2>
+        <p>Karpenter is an open-source node provisioning project built for Kubernetes, sponsored by AWS. Karpenter improves the efficiency and cost of running workloads on Kubernetes clusters by provisioning nodes that meet the requirements of the pods (e.g., CPU, GPUs, and memory) that the Kubernetes scheduler has marked as unschedulable.</p>
+        <p>Karpenter removes the requirement to specify node type (e.g., m5.large) & node groups, although users can provide criteria to choose specific instances (e.g., use spot for certain workloads). It is the most common alternative to the default Kubernetes autoscaler for AWS users. See below for an overview of how Karpenter works:</p>
+        <h2>How Karpenter Complements Sedai</h2>
+        <p>Sedai runs your applications at its best performance, cost, and availability. Sedai continuously monitors and learns your application to make informed decisions based on application infrastructure efficiency. Sedai builds a clear understanding of your application, its stateful or stateless nature, CPU & memory intensity, and response to horizontal or vertical scaling and the ideal and anomalous behavior of each of its dependencies.</p>
+        <p>While Karpenter supports your Kubernetes Cluster Scheduler, Sedai focuses on cost, performance, and availability from a holistic application & infrastructure perspective.</p>
+        <h3>Combined Use Cases</h3>
+        <p>The combination of Karpenter and Sedai can provide superior overall performance, availability, and cost. Karpenter's real-time scaling of nodes (adding and picking node types) is a unique function not performed by the Sedai platform. Karpenter’s real-time scaling can be made more powerful by leveraging Sedai’s granular understanding of application needs and traffic prediction capability. Three primary use cases for Karpenter with Sedai are:</p>
+        <ul>
+            <li><span class="bold">Optimizing node types:</span> Uses Sedai’s understanding of application and workload/application-level data to allow predictive scaling.</li>
+            <li><span class="bold">Predictive scaling:</span> Sedai’s predictive scaling is performed at the workload/application level and allows Sedai to predict the need for additional pods in advance, reducing the risk of performance deterioration during periods of rising traffic.</li>
+            <li><span class="bold">Optimizing spot vs. on-demand purchasing decisions:</span> Sedai recommends the optimal balance between spot and on-demand instances, reducing costs while maintaining reliability.</li>
+        </ul>
+        <h2>Integration Approach</h2>
+        <p>Initial setup of Sedai with Karpenter could be achieved by installing Karpenter through Sedai’s agent when the agent is connected to an AWS account with an additional installation step. Alternatively, Karpenter can be added later.</p>
+        <p>Karpenter’s compute provisioning for Kubernetes clusters is configured by a custom resource called <span class="bold">Provisioner</span>. Ongoing joint operation of Karpenter with Sedai would be achieved by Sedai sending configuration changes to Provisioner.</p>
+        <p>The diagram below shows how Karpenter integrated into an example architecture:</p>
+    </div>
+
+    <div class="page-section">
+        <h1>Page 24</h1>
+        <h1>AI-based Optimization in Action</h1>
+        <h2>KnowBe4 rolled out AI-based optimization & found cost savings of up to 50% in production</h2>
+        <blockquote>
+            <p><strong>"We've achieved remarkable cost savings: up to 50% savings in production and 87% in development — all within just five months and with zero incidents. We are also preventing customer problems, reducing toil and allowing our team to work on more valuable projects."</strong></p>
+            <p><strong>- Matthew Duren</strong><br>Senior Director of Software Engineering<br>KnowBe4</p>
+        </blockquote>
+    
+        <h1>Optimization in the Results Era</h1>
+        <h2>AI brings new cost savings capabilities</h2>
+        <ul>
+            <li><strong>Continuous cost optimization:</strong> Unlike static automation rules, AI continually learns and finds more savings using Reinforcement Learning.</li>
+            <li><strong>Safety & Application awareness:</strong> AI is aware of customer experience needs (via performance and availability metrics & SLOs) and factors these into safe optimization choices.</li>
+            <li><strong>Copilot and Autopilot modes:</strong> Autonomous execution means Engineering does not need to spend time on every change, reducing engineering effort (aka toil).</li>
+        </ul>
+        <p><em>“By 2026, organizations performing real-time cost or performance optimization of cloud-based workloads will rise from less than 20% in 2022 to 50%”</em> - Gartner</p>
+    
+        <h2>Why teams are embracing the Results Era</h2>
+        <h3>It’s time to leave behind the challenges of the Recommendations Era</h3>
+        <ol>
+            <li><strong>Backlog of recommendations:</strong> Slow execution & stale cost savings recommendations due to reliance on scarce engineering bandwidth.</li>
+            <li><strong>Difficulties staying optimized:</strong> New releases mean recommendations need to be revisited as pre-AI systems operate on static rules and aren’t capable of learning.</li>
+            <li><strong>Uncertain end user impacts:</strong> Current recommendation tools don’t fully consider performance and availability, creating safety risks & leading to delayed implementation.</li>
+        </ol>
+    
+        <h2>FinOps is Evolving: The “3 Rs” of FinOps</h2>
+        <h3>AI is taking FinOps into the Results Era</h3>
+        <p><strong>Reports Era (2012+):</strong> "What did we spend last month?"</p>
+        <p><strong>Recommendations Era (2016+):</strong> "We need to validate these proposed rightsizing changes with engineering."</p>
+        <p><strong>Results Era (2023+):</strong> "Tell the AI to minimize cost while hitting our SLOs."</p>
+    
+        <h2>FinOps in the AI Era</h2>
+        <h3>From Reports to Results</h3>
+        <p><strong>How FinOps Teams Use AI to Realize Cloud Cost Savings Faster</strong></p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+</body>
+</html>
